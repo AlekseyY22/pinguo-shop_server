@@ -5,7 +5,7 @@
 
 generator client {
   provider = "prisma-client"
-  output   = "..src/generated/prisma"
+  output   = "../src/generated/prisma"
   moduleFormat    = "cjs"
 }
 
@@ -20,7 +20,7 @@ model User {
    password             String?
 
    displayName          String      @default("Не указано")  @map("display_name")
-   picture              String      @default("https://llbx8df7abbnujxh.public.blob.vercel-storage.com/icons/no-user-image.png")
+   picture              String      @default("https://yxozvv5vioi6ry47.public.blob.vercel-storage.com/icons/no-user-image.png")
 
    role                 UserRole    @default(REGULAR)
    method               AuthMethod
